@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Countdown</title>
+</head>
+<body>
+
+	<div class="page-wrapper">
+	   	<header class="site-header">
+	   		<h1 class="time-bomb-title">Time Bomb</h1>
+	   	</header>
+	   	<main class="content">
+	   		<form class="time-form">
+	   			<div class="minutes-input">
+	   				<label for="min-input">Minutes:</label>
+	   			    <input type="number" class="time-input" name="min-input" placeholder="Enter minutes">
+	   			</div>
+	   			<div class="seconds-input">
+	   				<label for="sec-input">Seconds:</label>
+	   			    <input type="number" class="time-input" name="sec-input" placeholder="Enter seconds">
+	   			</div>
+	   			<button class="enter-button">Enter</button>
+	   		</form>
+	   		<div class="bomb-wrapper">
+				<section class="countdown">
+				  <div class="countdown-number">
+				    <p class="minutes countdown-time"></p>
+				    <p class="countdown-text">Minutes</p>
+				  </div>
+				  <p>:</p>
+				  <div class="countdown-number">
+				    <p class="seconds countdown-time"></p>
+				    <p class="countdown-text">Seconds</p>
+				  </div>
+				</section>
+				<div class="buttons">
+				  <button class="plus">+</button>
+				  <button class="minus">-</button>
+				  <button class="start">start</button>
+				</div>
+				<div class="message">  
+			    </div>
+			</div>
+	   	</main>
+	   	<aside class="sidebar-1"></aside>
+	   	<aside class="sidebar-2"></aside>
+	   	<footer class="site-footer">&#169 quarantine</footer>
+    </div>
+
+	<script src="./js/jquery-3.5.0.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

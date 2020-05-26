@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+body {
+    font-family: 'Black Ops One', cursive;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: minmax(80px, auto) 1fr minmax(80px, auto);
+    height: 100vh;
+    grid-template-areas: 
+    "header header header"
+    "sidebar-1 main sidebar-2"
+    "footer footer footer";
+}
+
+.site-header {
+    grid-area: header;
+    text-align: center;
+    background-color: rgb(232, 5, 5);
+}
+
+.content {
+    grid-area: main;
+}
+
+.time-bomb-title {
+    margin: 0;
+    position: relative;
+    top: 30%;
+}
+
+button,
+input {
+    font-family: 'Black Ops One', cursive;
+    border-radius: 5px;
+    border: 0.2vw solid #cb0505;
+    height: 30px;
+}
+
+input {
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #d1d1d1;
+}
+
+.time-form {
+    display: flex;
+    justify-content: space-around;
+    padding: 2vw 5vw 0 5vw;
+    height: 10%;
+    box-sizing: border-box;
+}
+
+.minutes-input,
+.seconds-input {
+    width: 35%;
+}
+
+.enter-button {
+    width: 20%;
+}
+
+.bomb-wrapper {
+    text-align: center;
+    background: url(../img/t-b.png) no-repeat;
+    background-size: contain;
+    background-position: top;
+    width: 100%;
+    height: 90%;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    padding-top: 6vw;
+    font-size: 5.5vw;
+    margin-bottom: 1vw;
+}
+
+.countdown > p {
+    font-size: 2vw;
+    padding-top: 2vw;
+    color: #cb0505;
+}
+
+.countdown-number {
+    display: inline-block;
+    color: #cb0505;
+}
+
+.countdown-text {
+    font-size: 1.5vw;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    height: 16vw;
+    flex-wrap: wrap;
+    padding: 0 38%;
+}
+
+.plus,
+.minus,
+.pause {
+    width: 45%;
+    height: 14%;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+}
+
+.start {
+    height: 20%;
+    width: 100%;
+    font-size: 2vw;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.message {
+    font-size: 5vw;
+    position: absolute;
+    margin: 15vw 0 0 26vw;
+}
+
+.sidebar-1 {
+    grid-area: sidebar-1;
+}
+
+.sidebar-2 {
+    grid-area: sidebar-2;
+}
+
+.site-footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(232, 5, 5);
+}
