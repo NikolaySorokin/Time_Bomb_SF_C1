@@ -112,7 +112,7 @@ button:active {
     display: flex;
     justify-content: space-around;
     align-content: space-between;
-    height: 16vw;
+    height: 15vw;
     flex-wrap: wrap;
     padding: 0 38%;
 }
@@ -121,13 +121,13 @@ button:active {
 .minus,
 .pause {
     width: 45%;
-    height: 14%;
+    height: 13%;
     font-size: 1.3vw;
     text-transform: uppercase;
 }
 
 .start {
-    height: 20%;
+    height: 18%;
     width: 100%;
     font-size: 2vw;
     text-transform: uppercase;
